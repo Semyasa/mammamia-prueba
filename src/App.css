@@ -1,38 +1,180 @@
+.navbar {
+  background-color: #17a2b8;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.active {
+  color: white;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.noActive {
+color: white;
+}
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+.slider {
+  background-image: url("../src/mamamia.jpg"); 
+  background-color: #cccccc; 
+  height: 500px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 100vw;
+  color: white;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.slider hr {
+  width: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+.pizzas {
+  display: grid;
+  gap: 10px;
+  padding-bottom: 10px;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.precio {
+  text-align: center;
+  font-size: 130%;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contenedorpizza {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.fotopizza {
+  padding-right: 15px;
+  
+}
+
+.pizza {
+  display: flex;
+  flex-direction: row; 
+  justify-content:flex-start;
+  align-items: left;
+  margin-top: 80px;
+  width: 60vw;
+  border: solid 1px;
+  
+}
+
+.descripcionpizza {
+  text-align: left;
+  margin-right: 15px;
+}
+
+.ingredientes {
+  margin-top: 15px;
+}
+
+ul {
+  list-style-type: '🍕';
+}
+
+.precioanadir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.contenedorgeneralcarrito {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulocarrito {
+  margin-top: 40px;
+  margin-left: 90px;
+  text-align: left;
+}
+
+.contenedorcarrito {
+  display: flex;
+  flex-direction:column; 
+  justify-content:flex-start;
+  align-items: left;
+  margin-top: 50px;
+  width: 50vw;
+  background-color: rgb(242, 243, 244);
+  height: 80vh;
+}
+
+.carritogeneral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.carrito {
+  width: 80%;
+  background-color: white;
+}
+
+.productoscarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.descripcionproducto {
+  padding-left: 15px;
+}
+
+.descripcionproducto span {
+  padding-left: 10px;
+}
+
+.botonesproductos {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items: right;
+  padding-right: 10px;
+}
+
+.botonesproductos h6 {
+  padding-right: 10px;
+  color: forestgreen;  
+}
+
+.cantidadpizza {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.totalbotoncarrito {
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 15px;
 }
